@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBeautySeol - Authentic Korean Skincare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-flower">
+                <i class="fas fa-spa"></i>
+            </div>
+            <p>Loading KBeautySeol...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">KBeautySeol</span>
+                <span class="logo-subtitle">Korean Skincare</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#shop" class="mobile-nav-link">Shop</a></li>
+            <li><a href="#products" class="mobile-nav-link">Products</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-line">KBeautySeol</span>
+                <span class="hero-title-sub">Authentic Korean Skincare</span>
+            </h1>
+            <p class="hero-subtitle">Discover the secret to glass skin with our premium Korean beauty products</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+                <a href="#shop" class="btn btn-secondary">Explore</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Premium Collection</span>
+                <h2 class="section-title">Glass Skin Essentials</h2>
+                <p class="section-subtitle">Curated Korean skincare for your daily ritual</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-card glass-card">
+                    <div class="featured-image">
+                        <img src="https://images.pexels.com/photos/3764645/pexels-photo-3764645.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Hydration">
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Deep Hydration</h3>
+                        <p>Lock in moisture with Korean hyaluronic acid formulas</p>
+                    </div>
+                </div>
+                <div class="featured-card glass-card">
+                    <div class="featured-image">
+                        <img src="https://images.pexels.com/photos/4352247/pexels-photo-4352247.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Glass Skin">
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Glass Skin Effect</h3>
+                        <p>Achieve that coveted translucent Korean glow</p>
+                    </div>
+                </div>
+                <div class="featured-card glass-card">
+                    <div class="featured-image">
+                        <img src="https://images.pexels.com/photos/3785706/pexels-photo-3785706.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Natural">
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Natural Ingredients</h3>
+                        <p>Botanical extracts from Korea's finest sources</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Collection</span>
+                <h2 class="section-title">Korean Skincare Products</h2>
+                <p class="section-subtitle">Authentic products for your beauty routine</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically inserted -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Section -->
+    <section class="trending">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hot Picks</span>
+                <h2 class="section-title">Trending Now</h2>
+            </div>
+            <div class="trending-scroll">
+                <div class="trending-card glass-card">
+                    <div class="trending-badge">Best Seller</div>
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=300&h=300&fit=crop" alt="Trending 1">
+                    <h4>Snail Mucin Essence</h4>
+                    <p>$24</p>
+                </div>
+                <div class="trending-card glass-card">
+                    <div class="trending-badge">New</div>
+                    <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=300&h=300&fit=crop" alt="Trending 2">
+                    <h4>Propolis Serum</h4>
+                    <p>$28</p>
+                </div>
+                <div class="trending-card glass-card">
+                    <div class="trending-badge">Popular</div>
+                    <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=300&h=300&fit=crop" alt="Trending 3">
+                    <h4>Green Tea Cream</h4>
+                    <p>$20</p>
+                </div>
+                <div class="trending-card glass-card">
+                    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=300&h=300&fit=crop" alt="Trending 4">
+                    <h4>Vitamin C Toner</h4>
+                    <p>$18</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> Your Cart</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically inserted -->
+            <div class="cart-empty">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="btn btn-primary checkout-btn" id="checkoutBtn">
+                Proceed to Checkout
+            </button>
+        </div>
+    </aside>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal glass-card">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Complete Your Order</h3>
+                <p>Fill in your details to place the order</p>
+            </div>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="customerName">Full Name *</label>
+                    <input type="text" id="customerName" name="customerName" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country *</label>
+                    <input type="text" id="country" name="country" required placeholder="Enter your country">
+                </div>
+                <div class="form-group">
+                    <label for="telegramUsername">Telegram Username *</label>
+                    <div class="input-with-icon">
+                        <span class="input-prefix">@</span>
+                        <input type="text" id="telegramUsername" name="telegramUsername" required placeholder="your_username">
+                    </div>
+                </div>
+                <div class="order-summary">
+                    <h4>Order Summary</h4>
+                    <div id="orderItems"></div>
+                    <div class="order-total">
+                        <span>Total:</span>
+                        <span id="orderTotal">$0</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">
+                    <i class="fab fa-telegram-plane"></i> Place Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal-overlay" id="confirmationModal">
+        <div class="modal confirmation-modal glass-card">
+            <div class="confirmation-content">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Thank You!</h3>
+                <p>Your order has been sent successfully.</p>
+                <p class="confirmation-text">Please contact us on Telegram to complete your payment:</p>
+                <a href="https://t.me/kbeautyseol" target="_blank" class="btn btn-primary telegram-btn">
+                    <i class="fab fa-telegram"></i> Chat on Telegram
+                </a>
+                <button class="btn btn-secondary" id="closeConfirmation">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info glass-card">
+                    <div class="contact-item">
+                        <i class="fab fa-telegram-plane"></i>
+                        <span>Telegram</span>
+                        <a href="https://t.me/kbeautyseol">@kbeautyseol</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <a href="mailto:hello@kbeautyseol.com">hello@kbeautyseol.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>KBeautySeol</h3>
+                    <p>Authentic Korean Skincare</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 KBeautySeol. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Telegram Floating Button -->
+    <a href="https://t.me/kbeautyseol" class="telegram-float" target="_blank">
+        <i class="fab fa-telegram-plane"></i>
+    </a>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
